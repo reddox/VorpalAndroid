@@ -1,0 +1,3 @@
+[submodule "app/src/main/assets/VorpalBlockly"]
+	path = app/src/main/assets/VorpalBlockly
+	url = https://github.com/reddox/VorpalBlockly.git

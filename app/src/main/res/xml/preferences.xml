@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:key="bluetooth"
+        app:title="Bluetooth"></PreferenceCategory>
+    <PreferenceCategory app:title="Execution">
+        <SeekBarPreference
+            android:max="1000"
+            app:min="50"
+            app:defaultValue="300"
+            app:showSeekBarValue="true"
+            app:key="executionStep"
+            app:title="Time between steps (ms)" />
+        <SwitchPreference
+            app:key="highlight"
+            app:title="Highlight active block"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

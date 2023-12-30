@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vorpal</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="hexapod_bluetooth">Hexapod Bluetooth</string>
+    <string name="gamepad_bluetooth">Gamepad Bluetooth</string>
+</resources>
