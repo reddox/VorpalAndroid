@@ -43,8 +43,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
                 pref.setOnPreferenceChangeListener { preference, newValue ->
                     updatePrefSummary(
-                        preference,
-                        newValue
+                        preference, newValue
                     )
                 }
                 pref.setOnPreferenceClickListener { preference -> updateBtDevices(preference) }
@@ -67,10 +66,9 @@ class SettingsFragment : PreferenceFragmentCompat() {
         return true
     }
 
-    @SuppressLint("MissingPermission")
     private fun updateBtDevices(p: Preference): Boolean {
-        val btManager: BluetoothManager? = requireActivity().getSystemService<BluetoothManager>()
-            ?: return false
+        val btManager: BluetoothManager? =
+            requireActivity().getSystemService<BluetoothManager>() ?: return false
         val btAdapter: BluetoothAdapter = btManager!!.adapter
 
 
